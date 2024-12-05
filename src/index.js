@@ -6,7 +6,7 @@ import mongoose from "mongoose"
 import { DB_NAME } from "./constant.js";
 import express from "express"
 const app = express();
-;( async () => {
+( async () => {
     try{
         mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
 
